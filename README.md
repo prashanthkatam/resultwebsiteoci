@@ -73,3 +73,18 @@ insert into students (hallticketno, name, telugu, hindi, english, maths, science
 
 insert into students (hallticketno, name, telugu, hindi, english, maths, science, social, totalmarks) values ('2022TS13', 'Boomaiah', '99', '99', '99', '99', '99', '99', '554');
 
+# Push to Dockerhub
+
+docker tag examwebsite:latest thebug2227/prodrepo:examwebsite
+
+docker push thebug2227/prodrepo:examwebsite
+
+thebug2227 is account name
+
+prodrepo is dockerhub repo name
+
+examwebsite is folder tagged to latest tag and pushed to thebug2227/prodrepo:examwebsite
+
+First step is to tag a folder/file to tag name
+
+Next step is to push it to the dockerhub
