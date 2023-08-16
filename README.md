@@ -88,3 +88,13 @@ examwebsite is folder tagged to latest tag and pushed to thebug2227/prodrepo:exa
 First step is to tag a folder/file to tag name
 
 Next step is to push it to the dockerhub
+
+# Update firewall settings. (THIS STEP IS NOT INCLUDED IN THIS TASK JUST FOR REFERENCE i AM ADDING HERE FOR FUTURE USE)
+
+The Ubuntu firewall is disabled by default. However, you still need to update your iptables configuration to allow HTTP traffic. Update iptables with the following commands.
+
+sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport 80 -j ACCEPT
+
+sudo netfilter-persistent save
+
+The commands add a rule to allow HTTP traffic and saves the changes to the iptables configuration files.
