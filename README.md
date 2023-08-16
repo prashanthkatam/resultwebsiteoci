@@ -27,11 +27,15 @@ docker exec -it 8bcb80759a88 /bin/bash
 # Git Commands
 
 git --version
-git init
-git add examwebsite/
-git commit -m "first commit"
-git remote set-url origin https://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@github.com/prashanthkatam/resultwebsiteoci.git
-git push origin master
 
+git init
+
+git add examwebsite/
+
+git commit -m "first commit"
+
+git remote set-url origin https://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@github.com/prashanthkatam/resultwebsiteoci.git
+
+git push origin master
 
 #apachectl restart (not required)
